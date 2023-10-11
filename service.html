@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Services</title>
+	<!---custom css link---->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+	<!------Header Section------>
+	<header>
+		<a href="home.html" class="logo">
+				<img
+				src="img/Vector.png"
+				alt="Danica Botin"
+			  />
+			</a>
+		<ul class="navlist">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a class="active" href="service.html">Services</a></li>
+			<li><a href="porfolio.html">Portfolio</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		<div class="bx bx-menu" id="menu-icon"></div>
+	</header>
+
+
+	<!-----------Services Section-------------->
+	<section class="services" id="services">
+	<div class="main-text">
+		<h2><span>My</span>Services</h2>
+	</div>
+	<div class="services-content">
+		<div class="box">
+			<div class="s-icons">
+				<i class='bx bx-mobile-alt'></i>
+			</div>
+			<h3>Web Design</h3>
+			<p>Crafting visually appealing, user-friendly websites that align with your brand and goals.</p>
+			<a href="#" class="btn">Read More</a>
+		</div>
+
+		<div class="box">
+			<div class="s-icons">
+				<i class='bx bx-code-alt'></i>
+			</div>
+			<h3>Responsive Design</h3>
+			<p>Ensuring your website functions seamlessly on all devices, from desktops to smartphones.</p>
+			<a href="#" class="btn">Read More</a>
+		</div>
+
+		<div class="box">
+			<div class="s-icons">
+				<i class='bx bx-edit-alt'></i>
+			</div>
+			<h3>Front-End Development</h3>
+			<p>Translating design concepts into functional web pages using HTML, CSS, and JavaScript.</p>
+			<a href="#" class="btn">Read More</a>
+		</div>
+	</div>
+
+</section>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		const menuIcon = document.getElementById("menu-icon");
+		const navList = document.querySelector(".navlist");
+
+		menuIcon.addEventListener("click", function () {
+			navList.classList.toggle("active");
+		});
+	});
+</script>
+</body>
+<!---------Footer Section---------->
+<section class="end">
+	<footer class="last-text">&copy; Danica Botin 2023</footer>
+    <div class="contact-icons">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-twitter' ></i></a>
+        <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+    </div>
+	
+</section>
+
+</html>

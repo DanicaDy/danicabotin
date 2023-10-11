@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About</title>
+	<!---custom css link---->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+	<!------Header Section------>
+	<header>
+		<a href="home.html" class="logo">
+				<img
+				src="img/Vector.png"
+				alt="Danica Botin"
+			  />
+			</a>
+            <ul class="navlist">
+                <li><a href="home.html">Home</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="porfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+		<div class="bx bx-menu" id="menu-icon"></div>
+	</header>
+
+	<!---------About Section --------------->
+	<section class="about" id="about">
+		<div class="about-img">
+			<img src="img/mypic.jpeg">
+		</div>
+
+		<div class="about-text">
+			<h2>About <span>Me</span></h2>
+			<h4>Aspiring UI/UX & Website Designer!</h4>
+			<p>I am 21 years old from provice of Sorsogon. My hobby is reading manhwa, wattpad, and novel. I am an aspiring web designer
+				with a profound passion for creating visually captivating and user-centric digital experiences. I blend creativity with 
+				technical proficiency, using tools such as HTML, CSS, and design software to bring my digital visions to life. My approach 
+				is rooted in a commitment to intuitive navigation, responsive design, and accessibility, ensuring that every website I craft
+				meets the diverse needs of its audience. I am a lifelong learner, staying updated with industry trends and continually 
+				expanding my skill set through online courses, workshops, and design blogs. I thrive as a problem solver, adapting to 
+				challenges and collaborating seamlessly with teams to bring projects to fruition. My portfolio showcases my evolving skills and 
+				reflects my entrepreneurial spirit, as I aspire to create innovative web experiences in this dynamic and ever-evolving field.
+				</p>
+				<a href="#" class="btn">More About</a>
+		</div>
+	</section>
+
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		const menuIcon = document.getElementById("menu-icon");
+		const navList = document.querySelector(".navlist");
+
+		menuIcon.addEventListener("click", function () {
+			navList.classList.toggle("active");
+		});
+	});
+</script>
+</body>
+<!---------Footer Section---------->
+<section class="end">
+	<footer class="last-text">&copy; Danica Botin 2023</footer>
+    <div class="contact-icons">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-twitter' ></i></a>
+        <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+    </div>
+	
+</section>
+
+</html>
