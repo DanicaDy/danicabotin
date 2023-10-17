@@ -1,316 +1,134 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Portfolio</title>
-	<!---custom css link---->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-
-	<link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botin Danica || Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- boxicon css link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 <body>
-	<!------Header Section------>
-	<header>
-		<a href="./home" class="logo">
-				<img
-				src="img/Vector.png"
-				alt="Danica Botin"
-			  />
-			</a>
-		<ul class="navlist">
-			<li><a href="./home">Home</a></li>
-			<li><a href="about">About</a></li>
-			<li><a href="service">Services</a></li>
-			<li><a class="active" href="./porfolio">Portfolio</a></li>
-			<li><a href="./contact">Contact</a></li>
-		</ul>
-		<div class="bx bx-menu" id="menu-icon"></div>
-	</header>
+	<!-- Navigation -->
+    <header>
+        <a href="./home.html" class="logo">
+			<img class="imglogo" src="img/Vector.png" alt="Danica Botin"/>
+		</a>
+        <ul class="navlist">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./porfolio.html" class="active">Portfolio</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <div class="right-header">
+            <div class="menu-icon">
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
 
-<!-----------Tab Gallery Section-------------->
+	<!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
+        <div class="main-text">
+            <h2 class="heading">My Projects</h2>
+            <span>Sample of My Work</span>
+        </div>
+        <div class="fillter-buttons">
+            <button class="button mixitup-control-active" data-filter="all">All Projects</button>
+            <button class="button" data-filter=".web">Web Development</button>
+            <button class="button" data-filter=".uiux">UI/UX Design</button>
+            <button class="button" data-filter=".branding">Code</button>
+        </div>
 
-<section class="portfolio" id="portfolio">
-    <div class="main-text">
-        <h2><span class="span1">Latest</span> Projects</h2>
-    </div>
-    <div class="tabs tabs-effect-scale tabs-theme-1" id="projects">
-		<input type="radio" name="tabs" checked  id="tab1"class="tab-content-first">
-		<label for="tab1"><i class="icon-bolt"></i>Web Design</label>
-		
-		<input type="radio" name="tabs" id="tab2" class="tab-content-2">
-		<label for="tab2"><i class="icon-picture"></i>Video Editing</label>
-		
-		<input type="radio" name="tabs" id="tab3" class="tab-content-3">
-		<label for="tab3"><i class="icon-cogs"></i>Logos</label>
+        <div class="portfolio-gallery">
+            <div class="portfolio-box mix uiux">
+                <div class="portfolio-content">
+                    <h3>UI/UX Design</h3>
+                    <p>My First Group Project -- Wonder Teach</p>
+                    <a href="#" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/Project1WB.png" alt="">
+                </div>
+            </div>
 
-		
-		<ul>
-			   <!-----------Tab 1-------------->
-			<li class="tab-content tab-content-first typography">
-				<div class="card-columns">
-					<div class="row">
-						<div class="card">
-							<img src="img/webdesign1.jpg" class="card-img-top" alt="Project Image">
-								<div class="layer">
-									<h5>Visual Design</h5>
-									<p>"Crafting Digital Experiences, One pixel at a Time".</p>
-									<a href="#"> <i class='bx bx-link-external'></i></a>
-								</div>
-							</div>
-					</div>	
-					<div class="row">
-						<div class="card">
-							<img src="img/webdesign2.png" class="card-img-top" alt="Project Image">
-								<div class="layer">
-									<h5>Visual Design</h5>
-									<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
-									<a href="#"> <i class='bx bx-link-external'></i></a>
-								</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="card">
-							<img src="img/webdesign3.jpg" class="card-img-top" alt="Project Image">
-								<div class="layer">
-									<h5>Visual Design</h5>
-									<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
-									<a href="#"> <i class='bx bx-link-external'></i></a>
-								</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="card">
-							<img src="img/webdesign4.png" class="card-img-top" alt="Project Image">
-								<div class="layer">
-									<h5>Visual Design</h5>
-									<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
-									<a href="#"> <i class='bx bx-link-external'></i></a>
-								</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="card">
-							<img src="img/webdesign5.png" class="card-img-top" alt="Project Image">
-								<div class="layer">
-									<h5>Visual Design</h5>
-									<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
-									<a href="#"> <i class='bx bx-link-external'></i></a>
-								</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="card">
-							<img src="img/webdesign6.jpg" class="card-img-top" alt="Project Image">
-								<div class="layer">
-									<h5>Visual Design</h5>
-									<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
-									<a href="#"> <i class='bx bx-link-external'></i></a>
-								</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="card">
-							<img src="img/webdesign7.webp" class="card-img-top" alt="Project Image">
-								<div class="layer">
-									<h5>Visual Design</h5>
-									<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
-									<a href="#"> <i class='bx bx-link-external'></i></a>
-								</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="card">
-							<img src="img/webdesign8.webp" class="card-img-top" alt="Project Image">
-								<div class="layer">
-									<h5>Visual Design</h5>
-									<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
-									<a href="#"> <i class='bx bx-link-external'></i></a>
-								</div>
-						</div>
-					</div>
-				</div>
-			</li>
-			
-			
-				<!-----------Tab 2-------------->
-			<li class="tab-content tab-content-2 typography">
-				<div class="card-columns">
-					<div class="row">
-						<div class="card">
-							<img src="img/prV2.png" class="card-img-top" alt="Project Image">
-								<div class="layer">
-									<h5>Visual Design</h5>
-									<p>"Transforming Moments into Cinematic Stories"</p>
-									<a href="#"> <i class='bx bx-link-external'></i></a>
-								</div>
-							</div>
-					</div>	
-					<div class="row">
-						<div class="card">
-							<img src="img/prV3.png" class="card-img-top" alt="Project Image">
-								<div class="layer">
-									<h5>Visual Design</h5>
-									<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
-									<a href="#"> <i class='bx bx-link-external'></i></a>
-								</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="card">
-							<img src="img/prV4.png" class="card-img-top" alt="Project Image">
-								<div class="layer">
-									<h5>Visual Design</h5>
-									<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
-									<a href="#"> <i class='bx bx-link-external'></i></a>
-								</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="card">
-							<img src="img/prV5.png" class="card-img-top" alt="Project Image">
-								<div class="layer">
-									<h5>Visual Design</h5>
-									<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
-									<a href="#"> <i class='bx bx-link-external'></i></a>
-								</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="card">
-							<img src="img/prV6.png" class="card-img-top" alt="Project Image">
-								<div class="layer">
-									<h5>Visual Design</h5>
-									<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
-									<a href="#"> <i class='bx bx-link-external'></i></a>
-								</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="card">
-							<img src="img/prV7.png" class="card-img-top" alt="Project Image">
-								<div class="layer">
-									<h5>Visual Design</h5>
-									<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
-									<a href="#"> <i class='bx bx-link-external'></i></a>
-								</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="card">
-							<img src="img/prV8.png" class="card-img-top" alt="Project Image">
-								<div class="layer">
-									<h5>Visual Design</h5>
-									<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
-									<a href="#"> <i class='bx bx-link-external'></i></a>
-								</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="card">
-							<img src="img/prV9.png" class="card-img-top" alt="Project Image">
-								<div class="layer">
-									<h5>Visual Design</h5>
-									<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
-									<a href="#"> <i class='bx bx-link-external'></i></a>
-								</div>
-						</div>
-					</div>
-				</div>
-			</li>
-			
-			
-				<!-----------Tab 3-------------->
-			<li class="tab-content tab-content-3 typography">
-				<div class="card-columns">
-					<div class="row">
-						<div class="card">
-							<img src="img/logo2.png" class="card-img-top" alt="Project Image">
-								<div class="layer">
-									<h5>Visual Design</h5>
-									<p>"Deigning Identity, Shaping Vision"</p>
-									<a href="#"> <i class='bx bx-link-external'></i></a>
-								</div>
-							</div>
-					</div>	
-					<div class="row">
-						<div class="card">
-							<img src="img/logo3.png" class="card-img-top" alt="Project Image">
-								<div class="layer">
-									<h5>Visual Design</h5>
-									<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
-									<a href="#"> <i class='bx bx-link-external'></i></a>
-								</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="card">
-							<img src="img/logowt.png" class="card-img-top" alt="Project Image">
-								<div class="layer">
-									<h5>Visual Design</h5>
-									<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
-									<a href="#"> <i class='bx bx-link-external'></i></a>
-								</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="card">
-							<img src="img/logo4.png" class="card-img-top" alt="Project Image">
-								<div class="layer">
-									<h5>Visual Design</h5>
-									<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
-									<a href="#"> <i class='bx bx-link-external'></i></a>
-								</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="card">
-							<img src="img/logo5.png" class="card-img-top" alt="Project Image">
-								<div class="layer">
-									<h5>Visual Design</h5>
-									<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
-									<a href="#"> <i class='bx bx-link-external'></i></a>
-								</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="card">
-							<img src="img/logo6.png" class="card-img-top" alt="Project Image">
-								<div class="layer">
-									<h5>Visual Design</h5>
-									<p>Check out 10 best Design's updates for the top web design & development compaines.</p>
-									<a href="#"> <i class='bx bx-link-external'></i></a>
-								</div>
-						</div>
-					</div>
-				</div>
-			</li>
-		</ul>
-	</div>
-</section>
+            <div class="portfolio-box mix web">
+                <div class="portfolio-content">
+                    <h3>Web Design</h3>
+                    <p>eme eme design</p>
+                    <a href="#" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/webdesign1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box mix web">
+                <div class="portfolio-content">
+                    <h3>Web Development</h3>
+                    <p>eme eme design</p>
+                    <a href="#" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/webdesign6.jpg" alt="">
+                </div>
+            </div>
 
 
-<script>
-	document.addEventListener("DOMContentLoaded", function () {
-		const menuIcon = document.getElementById("menu-icon");
-		const navList = document.querySelector(".navlist");
+            <div class="portfolio-box mix web">
+                <div class="portfolio-content">
+                    <h3>Web Development</h3>
+                    <p>eme eme design</p>
+                    <a href="#" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/webdesign8.webp" alt="">
+                </div>
+            </div>
 
-		menuIcon.addEventListener("click", function () {
-			navList.classList.toggle("active");
-		});
-	});
-</script>
+            <div class="portfolio-box mix uiux">
+                <div class="portfolio-content">
+                    <h3>UI/UX Design</h3>
+                    <p>Calculator Using Java</p>
+                    <a href="#" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/calculator.png" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box mix branding">
+                <div class="portfolio-content">
+                    <h3>C++ Code</h3>
+                    <p>My Project System First Code using C++ -- Dental Management System </p>
+                    <a href="#" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/projectbe.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/dylmnop/" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://github.com/DanicaDy" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://twitter.com/gwynDy011" target="_blank"><i class='bx bxl-twitter'></i></a>
+            <a href="https://web.facebook.com/danicabotin11" target="_blank"><i class='bx bxl-facebook'></i></a>
+        </div>
+    
+        <div class="quick-links">
+            <a href="./home.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./portfolio.html">Portfolio</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    <!-- mixitup cdn js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="script.js"></script>
 </body>
-<!---------Footer Section---------->
-<section class="end">
-	<footer class="last-text">&copy; Danica Botin 2023</footer>
-    <div class="contact-icons">
-        <a href="https://web.facebook.com/danicabotin11" target="_blank"><i class='bx bxl-facebook'></i></a>
-        <a href="https://www.instagram.com/dylmnop/" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
-        <a href="https://twitter.com/gwynDy011" target="_blank"><i class='bx bxl-twitter' ></i></a>
-    </div>
-	
-</section>
-
 </html>

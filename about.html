@@ -1,77 +1,136 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>About</title>
-	<!---custom css link---->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-
-	<link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- boxicon css link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 <body>
-	<!------Header Section------>
-	<header>
-		<a href="./home" class="logo">
-				<img
-				src="img/Vector.png"
-				alt="Danica Botin"
-			  />
-			</a>
-            <ul class="navlist">
-                <li><a href="./home">Home</a></li>
-                <li><a class="active" href="./about">About</a></li>
-                <li><a href="./service">Services</a></li>
-                <li><a href="./porfolio">Portfolio</a></li>
-                <li><a href="./contact">Contact</a></li>
-            </ul>
-		<div class="bx bx-menu" id="menu-icon"></div>
-	</header>
+	<!-- Navigation -->
+    <header>
+        <a href="./home.html" class="logo">
+			<img class="imglogo" src="img/Vector.png" alt="Danica Botin"/>
+		</a>
+        <ul class="navlist">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html" class="active">About</a></li>
+            <li><a href="./porfolio.html">Portfolio</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <div class="right-header">
+            <div class="menu-icon">
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
 
-	<!---------About Section --------------->
-	<section class="about" id="about">
-		<div class="about-img">
-			<img src="img/mypic.jpeg">
-		</div>
+	<!-- About page -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/mypic.jpeg" alt="" class="aboutHero">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About Me</h2>
+            <h3>3rd Year College Student in Bicol University</h3>
+            <p>I am 21 years old from the province of Sorsogon. My hobby is reading manhwa, Wattpad, and novels. I am an aspiring web designer
+                with a profound passion for creating visually captivating and user-centric digital experiences. I blend creativity with
+                technical proficiency, using tools such as HTML, CSS, and design software to bring my digital visions to life. My approach
+                is rooted in a commitment to intuitive navigation, responsive design, and accessibility, ensuring that every website I craft
+                meets the diverse needs of its audience. I am a lifelong learner, staying updated with industry trends and continually
+                expanding my skill set through online courses, workshops, and design blogs. I thrive as a problem solver, adapting to
+                challenges and collaborating seamlessly with teams to bring projects to fruition. My portfolio showcases my evolving skills and
+                reflects my entrepreneurial spirit, as I aspire to create innovative web experiences in this dynamic and ever-evolving field.</p>
+            <div class="about-btn">
+                <button class="active">Main Skills</button>
+                <button>Awards</button>
+                <button>Education</button>
+            </div>
+            <div class="content-btn">
+                <div class="content">
+                    <div class="text-box">
+                    <p>User Experience Design - UI / UX</p>
+                    <span>Delight the user and make it work.</span>
+                </div>
+                <div class="text-box">
+                    <p>Web & User Interface Design - Development</p>
+                    <span>Website , Web Experience , ...</span>
+                </div>
+                <div class="text-box">
+                    <p>Collaboration and Communication</p>
+                    <span>Communication skills and collaborative approach make a valuable team member</span>
+                </div>
+                </div>
 
-		<div class="about-text">
-			<h2>About <span>Me</span></h2>
-			<h4>Aspiring UI/UX & Website Designer!</h4>
-			<p>I am 21 years old from provice of Sorsogon. My hobby is reading manhwa, wattpad, and novel. I am an aspiring web designer
-				with a profound passion for creating visually captivating and user-centric digital experiences. I blend creativity with 
-				technical proficiency, using tools such as HTML, CSS, and design software to bring my digital visions to life. My approach 
-				is rooted in a commitment to intuitive navigation, responsive design, and accessibility, ensuring that every website I craft
-				meets the diverse needs of its audience. I am a lifelong learner, staying updated with industry trends and continually 
-				expanding my skill set through online courses, workshops, and design blogs. I thrive as a problem solver, adapting to 
-				challenges and collaborating seamlessly with teams to bring projects to fruition. My portfolio showcases my evolving skills and 
-				reflects my entrepreneurial spirit, as I aspire to create innovative web experiences in this dynamic and ever-evolving field.
-				</p>
-				<a href="https://web.facebook.com/danicabotin11" target="_blank" class="btn">More About</a>
-		</div>
-	</section>
+                <div class="content">
+                    <div class="text-box">
+                    <p>Elementary</p>
+                    <span>Achiever</span>
+                </div>
+                <div class="text-box">
+                    <p>Junior High</p>
+                    <span>With Honors</span>
+                </div>
+                <div class="text-box">
+                    <p>Senior High</p>
+                    <span>With Honors</span>
+                </div>
+                </div>
 
 
-<script>
-	document.addEventListener("DOMContentLoaded", function () {
-		const menuIcon = document.getElementById("menu-icon");
-		const navList = document.querySelector(".navlist");
+                <div class="content">
+                    <div class="text-box">
+                    <p>Elementary</p>
+                    <span>Cumadcad Central School</span><br>
+                    <span>2008-2015</span>
+                </div>
+                <div class="text-box">
+                    <p>Junior High</p>
+                    <span>Cumadcad National High School</span><br>
+                    <span>2015-2019</span>
+                </div>
+                <div class="text-box">
+                    <p>Senior High</p>
+                    <span>Anislag National High School</span>
+                    <span>TVL- Information and Communication Technology</span><br>
+                    <span>2019-2021</span>
+                </div>
+                <div class="text-box">
+                    <p>College</p>
+                    <span>Bicol University</span>
+                    <span>Bachelor of Science in Information Technology</span><br>
+                    <span>2021-Present</span>
+                </div>
+                </div>
+            </div>
+            <div class="cvContent">
+                <a href="img/resume.pdf" target="_blank" class="btn d-CV">Download CV <i class='bx bx-download'></i></a>
+            </div>
+        </div>
+    </section>
 
-		menuIcon.addEventListener("click", function () {
-			navList.classList.toggle("active");
-		});
-	});
-</script>
-</body>
-<!---------Footer Section---------->
-<section class="end">
-	<footer class="last-text">&copy; Danica Botin 2023</footer>
-	<div class="contact-icons">
-        <a href="https://web.facebook.com/danicabotin11" target="_blank"><i class='bx bxl-facebook'></i></a>
-        <a href="https://www.instagram.com/dylmnop/" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
-        <a href="https://twitter.com/gwynDy011" target="_blank"><i class='bx bxl-twitter' ></i></a>
-    </div>
 	
-</section>
 
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/dylmnop/" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://github.com/DanicaDy" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://twitter.com/gwynDy011" target="_blank"><i class='bx bxl-twitter'></i></a>
+            <a href="https://web.facebook.com/danicabotin11" target="_blank"><i class='bx bxl-facebook'></i></a>
+        </div>
+    
+        <div class="quick-links">
+            <a href="./home.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./portfolio.html">Portfolio</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    <!-- mixitup cdn js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
